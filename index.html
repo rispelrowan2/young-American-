@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Young American — Streetwear</title>
+<style>
+:root{--bg:#080808;--card:#111;--text:#f5f5f5;--muted:#999;--red:#d71920;--blue:#173b8f}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+nav{position:fixed;top:0;width:100%;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:rgba(8,8,8,.82);backdrop-filter:blur(12px);border-bottom:1px solid #222}
+.logo{font-weight:900;letter-spacing:2px;font-size:20px}.links{display:flex;gap:28px}.links a{color:#fff;text-decoration:none;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+.hero{min-height:100vh;padding:160px 6% 80px;display:flex;align-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 80% 30%,#173b8f44,transparent 30%),radial-gradient(circle at 20% 80%,#d7192033,transparent 28%)}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff18;border-radius:50%;right:-120px;top:180px}
+.kicker{font-size:12px;letter-spacing:5px;color:#bbb;text-transform:uppercase}.hero h1{font-size:clamp(64px,12vw,170px);line-height:.82;margin:22px 0;font-weight:1000;letter-spacing:-7px;max-width:950px}.hero h1 span{color:var(--red)}.hero p{max-width:520px;color:#aaa;font-size:17px;line-height:1.6}
+.btn{display:inline-block;margin-top:25px;padding:16px 26px;background:#fff;color:#000;text-decoration:none;font-weight:800;text-transform:uppercase;letter-spacing:1px;font-size:12px}.btn:hover{background:var(--red);color:#fff}
+section{padding:90px 6%}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section-head h2{font-size:42px;margin:0;text-transform:uppercase;letter-spacing:-2px}.section-head p{color:#777;margin:0}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:var(--card);overflow:hidden}.pic{height:340px;display:grid;place-items:center;background:linear-gradient(135deg,#191919,#050505);font-size:44px;font-weight:1000;letter-spacing:-2px}.product:nth-child(2) .pic{background:linear-gradient(145deg,#132d69,#090909)}.product:nth-child(3) .pic{background:linear-gradient(145deg,#571116,#090909)}.product:nth-child(4) .pic{background:linear-gradient(145deg,#252525,#090909)}.info{padding:18px}.info h3{margin:0 0 8px;font-size:15px;text-transform:uppercase}.price{color:#bbb;font-size:14px}
+.story{background:#eee;color:#0a0a0a;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.story h2{font-size:clamp(45px,7vw,90px);line-height:.9;margin:0;letter-spacing:-5px}.story p{font-size:18px;line-height:1.7;color:#333}.flag{height:330px;background:repeating-linear-gradient(0deg,#fff 0 28px,#d71920 28px 56px);position:relative;overflow:hidden}.flag:before{content:"";position:absolute;background:#173b8f;width:55%;height:55%;left:0;top:0}.flag:after{content:"YOUNG\\A AMERICAN";white-space:pre;position:absolute;left:35px;top:35px;color:white;font-size:30px;font-weight:900;line-height:1}
+.banner{text-align:center;padding:110px 6%;background:linear-gradient(90deg,#d71920,#8d1015,#173b8f)}.banner h2{font-size:clamp(45px,8vw,100px);margin:0 0 18px;letter-spacing:-5px}.banner p{margin:0;font-weight:700}
+footer{padding:45px 6%;display:flex;justify-content:space-between;border-top:1px solid #222;color:#777;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:800px){.links{display:none}.grid{grid-template-columns:1fr 1fr}.story{grid-template-columns:1fr}.hero h1{letter-spacing:-4px}.pic{height:260px}}@media(max-width:500px){.grid{grid-template-columns:1fr}.hero{padding-top:130px}.section-head{display:block}.section-head p{margin-top:10px}footer{display:block;line-height:2}}
+</style>
+</head>
+<body>
+<nav><div class="logo">YOUNG AMERICAN®</div><div class="links"><a href="#shop">Shop</a><a href="#story">Our Story</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<div class="kicker">Born to stand out</div>
+<h1>YOUNG<br><span>AMERICAN.</span></h1>
+<p>American attitude. Streetwear energy. Built for the generation making its own rules.</p>
+<a class="btn" href="#shop">Shop the drop →</a>
+</div>
+</header>
+
+<section id="shop">
+<div class="section-head"><h2>Latest Drop</h2><p>Limited pieces · Everyday essentials</p></div>
+<div class="grid">
+<article class="product"><div class="pic">YA<br>TEE</div><div class="info"><h3>Classic YA Tee</h3><div class="price">$45.00</div></div></article>
+<article class="product"><div class="pic">YA<br>HOODIE</div><div class="info"><h3>American Oversized Hoodie</h3><div class="price">$85.00</div></div></article>
+<article class="product"><div class="pic">YOUNG<br>AMERICAN</div><div class="info"><h3>Flag Graphic Tee</h3><div class="price">$50.00</div></div></article>
+<article class="product"><div class="pic">YA<br>CAP</div><div class="info"><h3>Signature Cap</h3><div class="price">$35.00</div></div></article>
+</div>
+</section>
+
+<section class="story" id="story">
+<div><h2>NO RULES.<br>JUST IDENTITY.</h2><p>Young American is streetwear for people who refuse to blend in. Clean silhouettes, loud graphics and an unapologetic attitude — made to be worn your way.</p><a class="btn" href="#contact">Join the movement</a></div>
+<div class="flag"></div>
+</section>
+
+<section class="banner" id="contact"><h2>WEAR YOUR<br>IDENTITY.</h2><p>New drops. Exclusive pieces. Follow Young American.</p></section>
+
+<footer><div>© 2026 Young American®</div><div>Instagram · TikTok · Email</div></footer>
+</body>
+</html>
